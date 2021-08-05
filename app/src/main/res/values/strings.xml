@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">공부기록</string>
+    <string name="action_subject">과목 선택</string>
+    <string name="action_home">메인 화면</string>
+    <string name="action_timer">공부하기</string>
+    <string name="action_map">지도보기</string>
+    <string name="action_calendar">공부기록조회</string>
+</resources>

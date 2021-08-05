@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.guru2">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <!-- GPS + 네트워크 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/studyrecord"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/studyrecord_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GURU2"
+        tools:replace="android:allowBackup">
+
+        <!--구글 API키 발급 후 입력 시 구글 지도 보임-->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="﻿$발급 받은 API키"/>
+
+        <activity android:name=".StudyCalendar" />
+        <activity android:name=".StudyCalendar_button" />
+        <activity android:name=".StudyCalendar_layout" />
+        <activity android:name=".StudyTimer" />
+        <activity android:name=".StudySubjects" />
+        <activity android:name=".StudyMap" />
+        <activity android:name=".StudyCalendar_totalButton" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

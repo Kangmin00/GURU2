@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/dlgTitle_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="일정을 입력하세요"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/dlglist_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ex) 교재 24pg 까지 정독하기"
+        android:textSize="20dp"
+        android:inputType="text" />
+
+</LinearLayout>
